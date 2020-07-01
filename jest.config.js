@@ -7,11 +7,10 @@ module.exports = {
     '!**/out/**',
     '!jest.config.js',
     '!next.config.js',
-    '!dummyData/**',
     '!test/*'
   ],
   setupFilesAfterEnv: ['<rootDir>/test/setupTests.js'],
-  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/coverage/'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/coverage/', '/out/'],
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest'
   },

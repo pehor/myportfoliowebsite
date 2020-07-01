@@ -2,10 +2,9 @@ import Logo from '../components/logo'
 import styles from './mainContainer.module.scss'
 import commonStyles from '../styles/common.scss'
 import Head from 'next/head'
-import Link from 'next/link'
 import React from 'react'
 
-export default function MainContainer (props) {
+export default function MaintenanceContainer (props) {
   const { children } = props
 
   return (
@@ -17,13 +16,9 @@ export default function MainContainer (props) {
       <div className="page">
         <div className={ styles.pageHeader }>
           <div className={ styles.pageHeaderLeft }>
-            <Link href="/">
-              <a>
-                <div className={ styles.logoImage }>
-                  <Logo/>
-                </div>
-              </a>
-            </Link>
+            <div className={ styles.logoImage }>
+              <Logo/>
+            </div>
           </div>
           <div className={ styles.pageHeaderRight }>
           </div>

@@ -1,4 +1,10 @@
-$primary-color: white;
-$secondary-color: grey;
-$background-color: #1b1c1d;
+$palette0: white;
+$palette1: #1b1c1d;
+
+
+$background-color: $palette0;
+$primary-color: $palette1;
+$secondary-color: $palette1;
+$background-color-secondary: darken($background-color, 10%);
 $main-font: Arial,Helvetica,sans-serif;
+$header-height: 60px;

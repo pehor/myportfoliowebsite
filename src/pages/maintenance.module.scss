@@ -1,0 +1,17 @@
+@import '../styles/tools';
+
+.mainTitle {
+  text-align: center;
+  @media only screen and (max-width: 500px) {
+    text-align: left;
+  }
+}
+
+.maintenanceContent {
+  text-align: center;
+  @media only screen and (max-width: 500px) {
+    text-align: left;
+  }
+  font-size: 1.75em;
+  line-height: 1.1em;
+}

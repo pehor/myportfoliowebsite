@@ -1,4 +1,4 @@
-# SSG-my-friend
+# My Portfolio website
 This repository is meant to be an example and a starting point for building a static website generator.
 It uses Next.js to generate a static website. Scripts are included to deploy the results to AWS S3.
 

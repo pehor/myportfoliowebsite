@@ -1,0 +1,55 @@
+.jobs {
+}
+
+.job {
+  margin-bottom: 1rem;
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    min-width: 80px;
+    max-width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    img {
+      margin: auto auto;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .jobTexts {
+    width: 100%;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      .jobTitle {
+        max-width: 75%;
+      }
+      .dates {
+        margin-left: auto;
+      }
+    }
+  }
+}

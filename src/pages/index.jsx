@@ -1,33 +1,46 @@
 import Link from 'next/link'
 import MainContainer from '../layouts/mainContainer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteLeft, faQuoteRight, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import styles from './index.module.scss'
+import texts from '../../content/texts'
+import Jobs from '../components/jobs'
 
-export default function Index () {
+export default function Index (props) {
   return (
     <MainContainer>
-      <h1>Hello SSG!</h1>
-      <div style={{ height: '10em' }}></div>
-      <div>
-        <FontAwesomeIcon icon={ faQuoteLeft } style={{ verticalAlign: 'super' }}/>
-        <span className = { styles.quoted }> Look how easy it is to create a static site! </span>
-        <FontAwesomeIcon icon={ faQuoteRight } style={{ verticalAlign: 'sub' }}/>
+      <div className={ styles.sideBySideContainer}>
+        <div className={ styles.leftBar }>
+          <div className={ styles.profileImage }></div>
+          <div className={ styles.primary }>
+            <div className={ styles.name }>Peter Horvath</div>
+            <div className={ styles.title }>Software Engineer</div>
+          </div>
+        </div>
+        <div className={ styles.details }>
+          <div className={ styles.summary }>
+            <h1>About me</h1>
+            <p>
+              { props.texts.summary }
+            </p>
+          </div>
+          <Jobs/>
+        </div>
       </div>
-      <div className={styles.quoteAuthor} style={{ float: 'right' }}>
-      - Unknown author
-      </div>
-      <div style={{ height: '10em' }}></div>
+
       <div style={{ marginTop: '1em' }}>
         <Link href="/about">
           <a>About Page <FontAwesomeIcon icon={ faAngleDoubleRight }/></a>
         </Link>
       </div>
-      <div style={{ marginTop: '1em' }}>
-        <Link href="/posts/0">
-          <a>Static Posts <FontAwesomeIcon icon={ faAngleDoubleRight }/></a>
-        </Link>
-      </div>
     </MainContainer>
   )
+}
+
+export async function getStaticProps () {
+  return {
+    props: {
+      texts
+    }
+  }
 }

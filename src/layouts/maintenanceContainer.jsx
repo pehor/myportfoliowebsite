@@ -1,4 +1,3 @@
-import Logo from '../components/logo'
 import styles from './mainContainer.module.scss'
 import commonStyles from '../styles/common.scss'
 import Head from 'next/head'
@@ -16,9 +15,6 @@ export default function MaintenanceContainer (props) {
       <div className="page">
         <div className={ styles.pageHeader }>
           <div className={ styles.pageHeaderLeft }>
-            <div className={ styles.logoImage }>
-              <Logo/>
-            </div>
           </div>
           <div className={ styles.pageHeaderRight }>
           </div>

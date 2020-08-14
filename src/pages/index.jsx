@@ -5,6 +5,7 @@ import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import styles from './index.module.scss'
 import texts from '../../content/texts'
 import Jobs from '../components/jobs'
+import Summary from '../components/summary'
 
 export default function Index (props) {
   return (
@@ -13,17 +14,12 @@ export default function Index (props) {
         <div className={ styles.leftBar }>
           <div className={ styles.profileImage }></div>
           <div className={ styles.primary }>
-            <div className={ styles.name }>Peter Horvath</div>
+            <div className={ styles.name }>PETER HORVATH</div>
             <div className={ styles.title }>Software Engineer</div>
           </div>
         </div>
         <div className={ styles.details }>
-          <div className={ styles.summary }>
-            <h1>About me</h1>
-            <p>
-              { props.texts.summary }
-            </p>
-          </div>
+          <Summary { ...props }/>
           <Jobs/>
         </div>
       </div>

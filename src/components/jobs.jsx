@@ -4,7 +4,7 @@ import jobs from '../../content/jobs'
 export default function Jobs () {
   return (
     <div>
-      <h1>Employment</h1>
+      <h1>EMPLOYMENT</h1>
       <ul className={ styles.jobs }>
         { jobs.map((job, index) => {
           return (

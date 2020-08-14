@@ -1,6 +1,6 @@
 export default [
   {
-    title: 'Senior Backend engineer at Ometria',
+    title: 'Senior Backend Engineer at Ometria',
     description: 'Creating marketing experiences our customers will love',
     dates: 'July 2020 - present',
     logo: '/ometria-logo.png'

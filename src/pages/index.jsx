@@ -6,18 +6,13 @@ import styles from './index.module.scss'
 import texts from '../../content/texts'
 import Jobs from '../components/jobs'
 import Summary from '../components/summary'
+import SideTallBar from '../components/sideTallBar'
 
 export default function Index (props) {
   return (
     <MainContainer>
       <div className={ styles.sideBySideContainer}>
-        <div className={ styles.leftBar }>
-          <div className={ styles.profileImage }></div>
-          <div className={ styles.primary }>
-            <div className={ styles.name }>PETER HORVATH</div>
-            <div className={ styles.title }>Software Engineer</div>
-          </div>
-        </div>
+        <SideTallBar/>
         <div className={ styles.details }>
           <Summary { ...props }/>
           <Jobs/>

@@ -10,10 +10,5 @@ describe('index', () => {
 
   test('renders some text', () => {
     expect(res.getByText(/Peter Horvath/)).toBeInTheDocument()
-    expect(res.getByText(/About me/)).toBeInTheDocument()
-  })
-
-  test('renders About page link', () => {
-    expect(res.getByText('About Page')).toBeInTheDocument()
   })
 })

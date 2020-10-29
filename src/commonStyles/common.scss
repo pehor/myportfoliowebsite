@@ -1,0 +1,5 @@
+@import './tools';
+
+.containerCentered {
+  @include centered(1000px);
+}

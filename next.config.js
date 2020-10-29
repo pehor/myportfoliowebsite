@@ -10,6 +10,7 @@ module.exports = withFonts(withSass({
 
     const simplePaths = {
       '/': { page: '/' },
+      '/old': { page: '/old' },
       '/maintenance': { page: '/maintenance' }
     }
 

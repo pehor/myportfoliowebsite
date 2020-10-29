@@ -1,7 +1,7 @@
-import MaintenanceContainer from '../layouts/maintenanceContainer'
+import MaintenanceContainer from '../layouts_old/maintenanceContainer'
 import React from 'react'
 import styles from './maintenance.module.scss'
-import commonStyles from '../styles/common.scss'
+import commonStyles from '../styles_old/common.scss'
 import { cx } from '../lib/cssTools'
 
 export default function Maintenance (_props) {

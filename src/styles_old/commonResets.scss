@@ -1,0 +1,26 @@
+@import './variables';
+
+body {
+  color: $primary-color;
+  background: $background-color;
+  font-family: $main-font;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  // preserves the newlines (and other whitespace) in loaded text
+  white-space: pre-wrap;
+}
+
+button {
+  padding: 0;
+}

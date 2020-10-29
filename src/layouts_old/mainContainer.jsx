@@ -1,9 +1,9 @@
 import styles from './mainContainer.module.scss'
-import commonStyles from '../styles/common.scss'
+import commonStyles from '../styles_old/common.scss'
 import Head from 'next/head'
 import React from 'react'
 
-export default function MaintenanceContainer (props) {
+export default function MainContainer (props) {
   const { children } = props
 
   return (

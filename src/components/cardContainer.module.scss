@@ -1,0 +1,11 @@
+@import '../commonStyles/variables';
+
+.cardContainer {
+  background-color: $card-background-color;
+  color: $main-text-color;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 2rem;
+  border-radius: 10px;
+  padding: 10px;
+}

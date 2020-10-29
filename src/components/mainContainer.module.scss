@@ -2,13 +2,12 @@
 @import '../commonStyles/commonResets';
 
 body {
-  color: $primary-color;
+  color: $main-text-color;
   background: $background-color;
   font-family: $main-font;
 }
 
 a {
-  color: $secondary-color;
   font-size: 1.5em;
   text-decoration: none;
 }

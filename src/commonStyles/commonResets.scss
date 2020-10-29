@@ -1,13 +1,13 @@
 @import './variables';
 
 body {
-  color: $primary-color;
+  color: $main-text-color;
   background: $background-color;
   font-family: $main-font;
 }
 
 a {
-  color: $primary-color;
+  color: $main-text-color;
   text-decoration: underline;
   cursor: pointer;
 }

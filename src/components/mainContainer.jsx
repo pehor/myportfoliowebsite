@@ -11,6 +11,7 @@ export default function MainContainer (props) {
       <Head>
         <title>Peter Horvath</title>
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"></link>
       </Head>
       <div className="page">
         <div className={ styles.pageHeader }>

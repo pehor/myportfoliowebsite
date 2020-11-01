@@ -1,14 +1,16 @@
 @import '../../node_modules/reset-css/sass/_reset.scss';
 @import '../commonStyles/commonResets';
+@import '../commonStyles/variables';
 
 body {
   color: $main-text-color;
   background: $background-color;
   font-family: $main-font;
+  font-weight: 300;
 }
 
 a {
-  font-size: 1.5em;
+  font-size: $main-font-size;
   text-decoration: none;
 }
 
@@ -18,10 +20,6 @@ a {
 
 .container {
   min-height: 700px;
-}
-
-.containerCentered {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
 }

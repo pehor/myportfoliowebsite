@@ -1,0 +1,21 @@
+@import '../commonStyles/tools';
+@import '../commonStyles/variables';
+
+.welcomeContainer {
+  padding-bottom: 0;
+  position: relative;
+}
+
+.socialLinks {
+  position: absolute;
+  bottom: 0;
+}
+
+.profileImage {
+  background-image: url('/profile-pic-1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+}

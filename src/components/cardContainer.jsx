@@ -7,7 +7,7 @@ export default function CardContainer (props) {
 
   return (
     <div className={ cx(styles.cardContainer, className) }>
-      <div className={ cx(styles.preHeaderStyles)}> { preHeaderContent || '' }</div>
+      <div className={ styles.preHeaderStyles }> { preHeaderContent || '' }</div>
       { children }
     </div>
   )

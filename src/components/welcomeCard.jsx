@@ -1,14 +1,14 @@
 import CardContainer from './cardContainer'
 import React from 'react'
-import styles from './welcomeContainer.module.scss'
+import styles from './welcomeCard.module.scss'
 import LinkedLogo from './linkedLogo'
 import { cx } from '../lib/cssTools'
 import commonStyles from '../commonStyles/tools.scss'
 
-export default function WelcomeContainer () {
+export default function WelcomeCard () {
   return (
     <>
-      <CardContainer className={ styles.welcomeContainer } preHeaderContent={'WELCOME'}>
+      <CardContainer className={ styles.welcomeCard } preHeaderContent={'WELCOME'}>
         <div className={ commonStyles.left }>
           <br/>
           PETER HORVATH

@@ -1,12 +1,17 @@
 import MainContainer from '../components/mainContainer'
 // import styles from './index.module.scss'
 import texts from '../../content/texts'
-import WelcomeContainer from '../components/welcomeContainer'
+import WelcomeCard from '../components/welcomeCard'
+import AboutCard from '../components/aboutCard'
+import Spacer from '../components/spacer'
 
 export default function Index (props) {
   return (
     <MainContainer>
-      <WelcomeContainer/>
+      <WelcomeCard/>
+      <Spacer/>
+      <AboutCard { ...props }/>
+      <Spacer/>
     </MainContainer>
   )
 }

@@ -1,3 +1,8 @@
 export default {
-  summary: 'A full-stack Senior Software engineer with a wide experience in Web development, Video applications (IPTV/OTT and Broadcasting), Mobile development and using Cloud infrastructure. Problem solver, with a pragmatic approach. Experienced in both working as part of a team and independently managing tasks and making decisions. An expert in remote working. Always eager to explore and learn new technologies.'
+  summary: [
+    'In a nutshell,',
+    'I am a full-stack web developer, but more importantly, a problem solver.',
+    'I build scalable services in the cloud, currently with a focus on backend microservices and with a background in frontend development.',
+    'I strive to help the teams I work with not only by delivering software, but also by guiding them towards better communication and knowledge management.'
+  ]
 }

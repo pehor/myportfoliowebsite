@@ -11,9 +11,8 @@ export default function WelcomeCard () {
       <CardContainer className={ styles.welcomeCard } preHeaderContent={'WELCOME'}>
         <div className={ commonStyles.left }>
           <br/>
-          PETER HORVATH
-          <br/>
-          SOFTWARE ENGINEER
+          <h1>PETER HORVATH</h1>
+          <h1>SOFTWARE ENGINEER</h1>
           <br/>
           <div className={ styles.socialLinks }>
             <LinkedLogo src='/linkedin.svg' alt='LinkedIn' target='https://www.linkedin.com/in/peter-horvath'/>

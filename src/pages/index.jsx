@@ -4,6 +4,7 @@ import texts from '../../content/texts'
 import WelcomeCard from '../components/welcomeCard'
 import AboutCard from '../components/aboutCard'
 import Spacer from '../components/spacer'
+import TopSkillsCard from '../components/topSkillsCard'
 
 export default function Index (props) {
   return (
@@ -11,6 +12,8 @@ export default function Index (props) {
       <WelcomeCard/>
       <Spacer/>
       <AboutCard { ...props }/>
+      <Spacer/>
+      <TopSkillsCard { ...props }/>
       <Spacer/>
     </MainContainer>
   )

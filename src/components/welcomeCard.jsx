@@ -13,7 +13,6 @@ export default function WelcomeCard () {
           <br/>
           <h1>PETER HORVATH</h1>
           <h1>SOFTWARE ENGINEER</h1>
-          <br/>
           <div className={ styles.socialLinks }>
             <LinkedLogo src='/linkedin.svg' alt='LinkedIn' target='https://www.linkedin.com/in/peter-horvath'/>
             <LinkedLogo src='/github.svg' alt='GitHub' target='https://github.com/pehor'/>

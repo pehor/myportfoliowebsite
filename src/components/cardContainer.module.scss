@@ -18,3 +18,11 @@
   top: -$main-line-height;
   color: $inverted-text-color;
 }
+
+.postHeaderStyles {
+  position: absolute;
+  top: 100%;
+  color: $inverted-text-color;
+  width: 100%;
+  margin-left: -20px;
+}

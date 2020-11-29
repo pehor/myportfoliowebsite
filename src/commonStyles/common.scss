@@ -1,5 +1,6 @@
 @import './tools';
+@import './variables';
 
 .containerCentered {
-  @include centered(1000px);
+  @include centered($max-body-width);
 }

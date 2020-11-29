@@ -8,7 +8,7 @@ export default [
     logo: '/ometria-logo.png'
   },
   {
-    title: 'Software Engineer at Holiday Extras',
+    title: 'Software Engineer',
     company: 'Holiday Extras',
     description: 'Delivering features to the high-traffic ecommerce platform, both on the frontend and the backend',
     dates: 'September 2017 - July 2020',

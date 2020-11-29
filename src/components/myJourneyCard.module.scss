@@ -1,3 +1,74 @@
+@import "../commonStyles/variables.scss";
+
+$logo-size: 60px;
+$dot-size: 20px;
+$gutter-width: 20px;
+
 .myJourneyCard {
+  .job {
+    //overflow: hidden;
+    padding-bottom: 2rem;
+  }
+  .verticalCentered {
+    display: flex;
+  }
+  .logo {
+    display: flex;
+    min-width: $logo-size;
+    max-width: $logo-size;
+    height: $logo-size;
+    overflow: hidden;
+    border-radius: 50%;
+    background: white;
+
+    img {
+      margin: auto auto;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .verticalBar {
+    background: $diagram-color-dark;
+    min-width: $dot-size;
+    max-width: $dot-size;
+    position: relative;
+    height: 100%;
+    margin-left: $gutter-width;
+
+  }
+  .verticalBar.first {
+    top: $logo-size / 2;
+  }
+
+  .dot {
+    min-width: $dot-size;
+    max-width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    background: $diagram-color-light;
+    position: absolute;
+    top: $logo-size / 2 - $dot-size / 2;
+  }
+
+  .first .dot {
+    top: -$dot-size / 2;
+  }
+
+  .yearAndDetails {
+    margin-left: $gutter-width;
+    margin-top: -$main-line-height / 2;
+    position: relative;
+    top: $logo-size / 2;
+    padding-bottom: $main-line-height / 2;
+  }
+
+  .year {
+  }
+
+  .details {
+    max-width: $max-body-width /2;
+    margin-left: $gutter-width;
+  }
 
 }

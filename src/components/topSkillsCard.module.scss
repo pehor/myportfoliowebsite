@@ -13,7 +13,12 @@
 
 .imageCopyright {
   font-size: 0.6rem;
+
   text-align: center;
+  @media all and (max-width: 600px) {
+    text-align: left;
+  }
+
   position: absolute;
   width: 100%;
 }

@@ -1,17 +1,18 @@
 @import "../commonStyles/variables.scss";
 
-$logo-size: 60px;
+$logo-size: 70px;
 $dot-size: 20px;
 $gutter-width: 20px;
 
 .myJourneyCard {
   .job {
-    //overflow: hidden;
-    padding-bottom: 2rem;
+    margin-left: 20px;
   }
+
   .verticalCentered {
     display: flex;
   }
+
   .logo {
     display: flex;
     min-width: $logo-size;
@@ -33,10 +34,9 @@ $gutter-width: 20px;
     min-width: $dot-size;
     max-width: $dot-size;
     position: relative;
-    height: 100%;
     margin-left: $gutter-width;
-
   }
+
   .verticalBar.first {
     top: $logo-size / 2;
   }
@@ -63,12 +63,13 @@ $gutter-width: 20px;
     padding-bottom: $main-line-height / 2;
   }
 
-  .year {
-  }
-
   .details {
-    max-width: $max-body-width /2;
-    margin-left: $gutter-width;
+    max-width: $max-body-width / 1.75;
+    margin-left: 2 * $gutter-width;
+    margin-bottom: 1 * $main-line-height;
   }
 
+  .description {
+    margin-top: 1rem;
+  }
 }

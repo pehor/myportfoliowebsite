@@ -20,21 +20,18 @@ export default function MyJourneyCard (props) {
                     <div className={ styles.dot }></div>
                   </div>
                   <div className={ styles.yearAndDetails }>
-                    <div className={ cx(commonStyles.left, styles.year) }>
+                    <div className={ commonStyles.left }>
                       { job.year }
                     </div>
                     <div className={ cx(commonStyles.right, styles.details) }>
-                      { job.title.toUpperCase() }
-                      <br/>
-                      { job.company.toUpperCase() }
-                      <br/>
-                      { job.description }
+                      <p>{ job.title.toUpperCase() }</p>
+                        @ { job.company.toUpperCase() }
+                      <p className={ styles.description }>
+                        { job.description }
+                      </p>
                     </div>
-                    <div className={ commonStyles.clear }></div>
                   </div>
                 </div>
-
-
               </div>
             )
           })}

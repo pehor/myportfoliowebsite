@@ -1,0 +1,23 @@
+@import '../commonStyles/variables';
+
+.skillsCard {
+  .skillTitle {
+    display: inline-block;
+    width: 12rem;
+  }
+  .skillBar {
+    display: inline-block;
+    width: 75%;
+
+    .skillBarLeft {
+      background: $diagram-color-callout;
+    }
+    .skillBarRight {
+      background: $diagram-color-light;
+    }
+    .skillBarLeft, .skillBarRight {
+      display: inline-block;
+      height: 0.5rem;
+    }
+  }
+}

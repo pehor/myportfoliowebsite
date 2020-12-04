@@ -8,7 +8,7 @@ export default function AboutCard (props) {
       <CardContainer className={ styles.aboutCard } preHeaderContent={'ABOUT ME'}>
         { props.texts.summary.map((line, index) => {
           return (
-            <p key={ index }>{line}</p>
+            <p key={ index }>{ line }</p>
           )
         })
         }

@@ -2,7 +2,7 @@ $palette0: #ffffff; // white
 $palette1: #3d3e4d; // dark blue
 $palette2: #eed4b9; // cream
 $palette3: #352e2f; // softer black
-$palette4: #938885; // lighter grey
+$palette4: lighten(#938885, 5%); // lighter grey
 $palette5: #5A5250; // darker grey
 $palette6: #825140; // brown
 

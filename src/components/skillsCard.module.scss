@@ -1,13 +1,16 @@
 @import '../commonStyles/variables';
 
 .skillsCard {
+  .skill {
+    margin-bottom: 0.5rem;
+  }
   .skillTitle {
     display: inline-block;
-    width: 12rem;
+    width: 14rem;
   }
   .skillBar {
     display: inline-block;
-    width: 75%;
+    width: calc(100% - 14rem);
 
     .skillBarLeft {
       background: $diagram-color-callout;
@@ -19,5 +22,8 @@
       display: inline-block;
       height: 0.5rem;
     }
+  }
+  .skillMembers {
+    margin-left: 3rem;
   }
 }

@@ -23,9 +23,12 @@ export default function SkillsCard (props) {
       <CardContainer className={ styles.skillsCard } preHeaderContent={'SKILLS'}>
         { props.skills.map((skill, index) => {
           return (
-            <div key={ index }>
+            <div key={ index } className={ styles.skill }>
               <div className={ styles.skillTitle }>{ skill.title }</div>
               <SkillBar className={ styles.skillBar } fullness={ skill.value }/>
+              { skill.members && (
+                <div className={ styles.skillMembers }>{ skill.members.join(', ')}</div>
+              )}
             </div>
           )
         })

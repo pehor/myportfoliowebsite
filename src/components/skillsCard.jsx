@@ -1,6 +1,7 @@
 import CardContainer from './cardContainer'
 import React from 'react'
 import styles from './skillsCard.module.scss'
+import commonStyles from '../commonStyles/tools.scss'
 import { cx } from '../lib/cssTools'
 
 function SkillBar (props) {
@@ -21,6 +22,13 @@ export default function SkillsCard (props) {
   return (
     <>
       <CardContainer className={ styles.skillsCard } preHeaderContent={'SKILLS'}>
+        <div className={ styles.skillsHeader }>
+          <div className={ styles.titlePlaceHolder }></div>
+          <div className={ styles.levelDescriptions }>
+            <div className={ cx(styles.start, commonStyles.left) }>Beginner</div>
+            <div className={ cx(styles.end, commonStyles.right) }>Expert</div>
+          </div>
+        </div>
         { props.skills.map((skill, index) => {
           return (
             <div key={ index } className={ styles.skill }>

@@ -1,16 +1,35 @@
 @import '../commonStyles/variables';
 
+$leftColWidth: 14rem;
+$rightColWidth: calc(100% - 14rem);
+
 .skillsCard {
+  .skillsHeader {
+    font-size: 1rem;
+
+    .titlePlaceHolder {
+      display: inline-block;
+      width: $leftColWidth;
+    }
+    .levelDescriptions {
+      display: inline-block;
+      width: $rightColWidth;
+
+      .start, .end {
+        display: inline-block;
+      }
+    }
+  }
   .skill {
     margin-bottom: 0.5rem;
   }
   .skillTitle {
     display: inline-block;
-    width: 14rem;
+    width: $leftColWidth;
   }
   .skillBar {
     display: inline-block;
-    width: calc(100% - 14rem);
+    width: $rightColWidth;
 
     .skillBarLeft {
       background: $diagram-color-callout;
@@ -25,5 +44,6 @@
   }
   .skillMembers {
     margin-left: 3rem;
+    margin-top: 0.5rem;
   }
 }

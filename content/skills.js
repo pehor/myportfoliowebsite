@@ -3,16 +3,20 @@ export default [
     title: 'JavaScript',
     value: 0.9,
     members: [
-      'Node.js', 'React', 'HTML', 'CSS (LESS/SASS)', 'JQuery', 'Responsive design'
+      'Node.js', 'React', 'HTML', 'CSS (LESS/SASS)', 'Responsive design'
     ]
-  },
-  {
-    title: 'Microservices',
-    value: 0.8
   },
   {
     title: 'Python',
     value: 0.7
+  },
+  {
+    title: 'Go',
+    value: 0.2
+  },
+  {
+    title: 'Microservices',
+    value: 0.8
   },
   {
     title: 'Databases',
@@ -25,14 +29,21 @@ export default [
     title: 'Cloud infrastructure',
     value: 0.7,
     members: [
-      'AWS (EC2, S3, Lambda)', 'Pubsub (GCP)', 'Kubernetes'
+      'AWS (EC2, S3, Lambda)', 'Pubsub (GCP)', 'Kubernetes', 'Docker'
     ]
   },
   {
-    title: 'Methodology',
+    title: 'CI/CD',
+    value: 0.7,
+    members: [
+      'Git', 'GitHub', 'Automated testing'
+    ]
+  },
+  {
+    title: 'Ways of working',
     value: 0.8,
     members: [
-      'DevOps', 'Agile (Scrum, Kanban)'
+      'DevOps', 'Agile (Scrum, Kanban)', 'Knowledge management'
     ]
   }
 ]

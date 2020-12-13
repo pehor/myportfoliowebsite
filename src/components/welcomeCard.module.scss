@@ -3,21 +3,21 @@
 
 .welcomeCard {
   padding-bottom: 0;
-}
 
-.socialLinks {
-  margin-top: 1rem;
-}
+  .socialLinks {
+    margin-top: 1rem;
+  }
 
-.profileImage {
-  background-image: url('/profile-pic-1.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
-  @media all and (max-width: 600px) {
-    height: 155px;
-    width: 140px;
+  .profileImage {
+    background-image: url('/profile-pic-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    @media all and (max-width: 600px) {
+      height: 155px;
+      width: 140px;
+    }
   }
 }

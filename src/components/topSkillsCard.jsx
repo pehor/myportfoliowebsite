@@ -10,7 +10,7 @@ function TopSkillsCardPostElement () {
     <>
       <div className={ styles.imageCopyright }>Image by Jakub Dziubak (Unsplash)</div>
       <div className={ cx(commonStyles.right, styles.postHeaderContent) } >
-        <Link href="/index/#skills" >
+        <Link href="/#skills" >
           <a>SEE ALL SKILLS &gt;&gt;</a>
         </Link>
       </div>
@@ -26,14 +26,14 @@ export default function TopSkillsCard (props) {
         <div className={ cx(commonStyles.left, styles.topSkillsText)}>
           { props.texts.topSkills.left.map((skill, index) => {
             return (
-              <p key={ index }>{skill}</p>
+              <div key={ index }>{skill}</div>
             )
           })}
         </div>
         <div className={ cx(commonStyles.right, styles.topSkillsText) }>
           { props.texts.topSkills.right.map((skill, index) => {
             return (
-              <p key={ index }>{skill}</p>
+              <div key={ index }>{skill}</div>
             )
           })}
         </div>

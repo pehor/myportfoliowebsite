@@ -1,11 +1,15 @@
 # My Portfolio website
-This repository is meant to be an example and a starting point for building a static website generator.
-It uses Next.js to generate a static website. Scripts are included to deploy the results to AWS S3.
+This website was built with two purposes in mind: to serve as a personal website and as a developer's portfolio item.
+The goal of the project was to create an easy to build and cheap to maintain site whilst being able to
+demonstrate website building capabilities. (I.e. I wanted to avoid using WordPress and the like)
+The site is built with React.js, and is statically rendered by Next.js. Styling is done with CSS modules using
+SCSS and designed in a basic responsive way. The results are served from S3 through CloudFront.
 
-There are simple static pages and generated static pages. The `dummyData` folder is included to emulate a simple CMS as the data source for the generated pages (see `src/pages/posts`).
-This data is read at build time from there.
 
-# Setup to support deployment to AWS S3
+# Deployment
+Scripts are included to deploy the results to AWS S3.
+
+## Setup to support deployment to AWS S3
 - set up an AWS S3 bucket at https://s3.console.aws.amazon.com/
 
 You need to create an S3 bucket. It needs to be set up for static website hosting. Blocking public access should be turned off.
@@ -41,13 +45,16 @@ export AWS_DEFAULT_REGION=[your aws region]
 
 More info can be found [in the AWS docs](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html).
 
+To deploy the site, run `npm run deploy`. (See the Scripts section for required preparations and other scripts)
+
 # Scripts
 
 You need to run `npm install` before running any of the scripts below.
 
 All scripts can be run by `npm run <script>`. Check package.json for all scripts. The main scripts for the workflow is:
 
-- `build`: Runs linting, builds the projects using static data, and exports everything to he `out` directory
+- `build`: Runs linting, builds the projects into static assets, and copies them to he `out` directory
+- `dev`: The quick way to see the changes during development, it starts the development server with reload on code changes.
 - `test`: Runs unittests with jest
 - `serve:static`: Serves the contents of the `out` directory locally for testing
 - `deploy`: Syncs the contents of the `out` directory to an S3 bucket
@@ -60,47 +67,6 @@ Unittests are run by Jest. Coverage is also available. You can run them like thi
 npm run test
 npm run coverage
 ```
-
-Because we use React, we need a few extra configs to test rendering of pages.
-
-`.babelrc` is required to transpile jsx files using babel, so that the tests can use them.
-
-`tests/setupTests.js` is a common setup file. In our case it loads `@testing-library/jest-dom/extend-expect`, which contains extensions to help with matching things in the dom.
-
-`jest.config.js` sets up coverage checking, defines the route to setupTests.js, and defines transpiling options. 
-
-`"jest": true` is added to `.eslintre.json` so that we don't get undefined errors for test() and expect() in our tests.
-
-In order to make .scss module imports work in tests, in `jest.config.js`, the `moduleNameMapper` object was added to point all style (and other non-js) files to a mock.
-# Styling
-
-This project uses Sass and styles are set up to be module-scoped. This means that the styles for your xxx.jsx file need to be in a file called xxx.module.scss.
-That file needs to be imported in the jsx module, and the class names defined in the scss file should be used. For example:
-
-```jsx harmony
-// contents of mainContainer.jsx:
-import styles from './mainContainer.module.scss'
-
-class MainContainer extends Component {
-  render () {
-    ...
-    return (
-      ...
-      <div className={ styles.pageHeader }></div>
-    )
-  }
-}
-```
-
-Reset.scss is loaded from an npm module and resets some of the common default browser stylings.
-
-Common variables are defined in `src/styles/variables.scss` and need to be imported to files that use them.
-
-Font-awesome is included by default, see examples of its usage in `index.jsx`.
-
-# Static assets
-
-All static assets need to be stored in the `/public` folder. See the `/public/logo.png` as an example. Make sure files don't have the same name as a file in the `/pages` directory.
 
 # Web crawlers
 

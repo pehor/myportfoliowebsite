@@ -1,3 +1,4 @@
+import React from 'react'
 import MainContainer from '../components/mainContainer'
 import texts from '../../content/texts'
 import jobs from '../../content/jobs'
@@ -8,6 +9,8 @@ import Spacer from '../components/spacer'
 import TopSkillsCard from '../components/topSkillsCard'
 import MyJourneyCard from '../components/myJourneyCard'
 import SkillsCard from '../components/skillsCard'
+import AboutThisWebsiteCard from '../components/aboutThisWebsite'
+import LastCard from '../components/lastCard'
 
 export default function Index (props) {
   return (
@@ -21,6 +24,10 @@ export default function Index (props) {
       <MyJourneyCard { ...props }/>
       <Spacer/>
       <SkillsCard { ...props }/>
+      <Spacer/>
+      <AboutThisWebsiteCard/>
+      <Spacer/>
+      <LastCard/>
     </MainContainer>
   )
 }

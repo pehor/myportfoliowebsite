@@ -24,11 +24,11 @@ export default function MyJourneyCard (props) {
                       { job.year }
                     </div>
                     <div className={ cx(commonStyles.right, styles.details) }>
-                      <p>{ job.title.toUpperCase() }</p>
+                      <div>{ job.title.toUpperCase() }</div>
                         @ { job.company.toUpperCase() }
-                      <p className={ styles.description }>
+                      <div className={ styles.description }>
                         { job.description }
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>

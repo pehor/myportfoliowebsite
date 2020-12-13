@@ -21,7 +21,7 @@ function SkillBar (props) {
 export default function SkillsCard (props) {
   return (
     <>
-      <CardContainer className={ styles.skillsCard } preHeaderContent={'SKILLS'}>
+      <CardContainer className={ styles.skillsCard } preHeaderContent={'SKILLS'} cardId={'skills'}>
         <div className={ styles.skillsHeader }>
           <div className={ styles.titlePlaceHolder }></div>
           <div className={ styles.levelDescriptions }>

@@ -3,12 +3,18 @@ import React from 'react'
 import styles from './topSkillsCard.module.scss'
 import { cx } from '../lib/cssTools'
 import commonStyles from '../commonStyles/tools.scss'
+import Link from 'next/link'
 
 function TopSkillsCardPostElement () {
   return (
     <>
-      <div className={ commonStyles.right }>SEE ALL SKILLS &gt;&gt;</div>
       <div className={ styles.imageCopyright }>Image by Jakub Dziubak (Unsplash)</div>
+      <div className={ cx(commonStyles.right, styles.postHeaderContent) } >
+        <Link href="/index/#skills" >
+          <a>SEE ALL SKILLS &gt;&gt;</a>
+        </Link>
+      </div>
+      <div className={ commonStyles.clear }></div>
     </>
   )
 }

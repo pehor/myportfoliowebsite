@@ -5,7 +5,12 @@ export default [
     description: 'Building scalable cloud-based microservices to support the multi-channel marketing platform.',
     dates: 'July 2020 - present',
     year: '2020',
-    logo: '/ometria-logo.png'
+    logo: '/ometria-logo.png',
+    projects: [
+      'Integration of mobile push notifications to the marketing automation system and ensuring that the externally built SDK was aligned to our needs.',
+      'Improved the scalability of a feature in the marketing automation system, which allowed Ometria to make it available in the peak period for key customers.',
+      'Coordinating within the team and executing tasks to ensure the system was scaled up and performed well at the peak period (Black Friday).'
+    ]
   },
   {
     title: 'Software Engineer',
@@ -13,7 +18,14 @@ export default [
     description: 'Delivering features to the high-traffic ecommerce platform, both on the frontend and the backend',
     dates: 'September 2017 - July 2020',
     year: '2017',
-    logo: '/holidayextras-logo.png'
+    logo: '/holidayextras-logo.png',
+    projects: [
+      'Improving the tech stack by moving towards cloud-hosted Node.js microservices and a decoupled, event-based architecture. Using best practice to monitor systems and improve performance using metrics and logging aggregators.',
+      'Integrating third-party APIs to acquire new supply for the business.',
+      'Improving the React-based storefront with new features, using AB testing and user journey tracking.',
+      'Improving customer self-serve rates and experience by redesigning the transactional email contents and migrating to a scalable and trackable delivery system (Amazon SES).',
+      'Taking the initiative to improve our knowledge sharing efforts by hosting workshops, internal conference talks, setting up internal learning sites and looking into improvements to our knowledge base. Championing the remote working culture. Mentoring new starters.'
+    ]
   },
   {
     title: 'Senior Software Engineer',

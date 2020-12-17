@@ -3,10 +3,11 @@
 $logo-size: 70px;
 $dot-size: 20px;
 $gutter-width: 20px;
+$year-width: 5rem;
 
 .myJourneyCard {
   .job {
-    margin-left: 20px;
+    //margin-left: 20px;
   }
 
   .verticalCentered {
@@ -55,7 +56,7 @@ $gutter-width: 20px;
     top: -$dot-size / 2;
   }
 
-  .yearAndDetails {
+  .jobTexts {
     margin-left: $gutter-width;
     margin-top: -$main-line-height / 2;
     position: relative;
@@ -63,13 +64,35 @@ $gutter-width: 20px;
     padding-bottom: $main-line-height / 2;
   }
 
+  .yearAndJob {
+    display: flex;
+  }
+  .year {
+    min-width: $year-width;
+    max-width: $year-width;
+  }
+
+  .jobTitleAndWorkplace {
+
+  }
+
   .details {
-    max-width: $max-body-width / 1.75;
-    margin-left: 2 * $gutter-width;
+    margin-left: $year-width;
+    @media only screen and (max-width: 700px) {
+      margin-left: 0;
+    }
     margin-bottom: 1 * $main-line-height;
   }
 
   .description {
     margin-top: 1rem;
+  }
+  .projectsHeader {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .projects {
+
   }
 }

@@ -19,16 +19,30 @@ export default function MyJourneyCard (props) {
                   <div className={ cx(styles.verticalBar, index === 0 ? styles.first : '') }>
                     <div className={ styles.dot }></div>
                   </div>
-                  <div className={ styles.yearAndDetails }>
-                    <div className={ commonStyles.left }>
-                      { job.year }
+                  <div className={ styles.jobTexts }>
+                    <div className={ styles.yearAndJob }>
+                      <div className={ styles.year }>
+                        { job.year }
+                      </div>
+                      <div className={ styles.jobTitleAndWorkplace }>
+                        <div>{ job.title.toUpperCase() }</div>
+                        <div>@ { job.company.toUpperCase() }</div>
+                      </div>
                     </div>
-                    <div className={ cx(commonStyles.right, styles.details) }>
-                      <div>{ job.title.toUpperCase() }</div>
-                        @ { job.company.toUpperCase() }
+                    <div className={ styles.details }>
                       <div className={ styles.description }>
                         { job.description }
                       </div>
+                      { job.projects && (
+                        <div>
+                          <div className={ styles.projectsHeader }>PROJECTS</div>
+                          { job.projects.map((project, index) => {
+                            return (
+                              <div key={ index }>&mdash; { project }</div>
+                            )
+                          })}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

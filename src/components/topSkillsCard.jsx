@@ -23,17 +23,17 @@ export default function TopSkillsCard (props) {
   return (
     <>
       <CardContainer className={ styles.topSkillsCard } preHeaderContent={ 'TOP SKILLS' } postHeaderContent={ TopSkillsCardPostElement() }>
-        <div className={ cx(commonStyles.left, styles.topSkillsText)}>
+        <div className={ cx(commonStyles.left, styles.topSkillsText, styles.alignLeft)}>
           { props.texts.topSkills.left.map((skill, index) => {
             return (
-              <div key={ index }>{skill}</div>
+              <div key={ index }>{ skill }</div>
             )
           })}
         </div>
-        <div className={ cx(commonStyles.right, styles.topSkillsText) }>
+        <div className={ cx(commonStyles.right, styles.topSkillsText, styles.alignRight) }>
           { props.texts.topSkills.right.map((skill, index) => {
             return (
-              <div key={ index }>{skill}</div>
+              <div key={ index }>{ skill }</div>
             )
           })}
         </div>

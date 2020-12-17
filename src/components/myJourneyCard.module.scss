@@ -4,12 +4,9 @@ $logo-size: 70px;
 $dot-size: 20px;
 $gutter-width: 20px;
 $year-width: 5rem;
+$break-point: 760px;
 
 .myJourneyCard {
-  .job {
-    //margin-left: 20px;
-  }
-
   .verticalCentered {
     display: flex;
   }
@@ -28,6 +25,37 @@ $year-width: 5rem;
       width: 100%;
       height: auto;
     }
+
+    @media only screen and (max-width: $break-point) {
+      margin-right: 20px;
+    }
+  }
+
+  .onlyLargeScreenFlex {
+    display: flex;
+    @media only screen and (max-width: $break-point) {
+      display: none;
+    }
+  }
+
+  .onlySmallScreenFlex {
+    display: none;
+    @media only screen and (max-width: $break-point) {
+      display: flex;
+    }
+  }
+  .onlyLargeScreenBlock {
+    display: block;
+    @media only screen and (max-width: $break-point) {
+      display: none;
+    }
+  }
+
+  .onlySmallScreenBlock {
+    display: none;
+    @media only screen and (max-width: $break-point) {
+      display: block;
+    }
   }
 
   .verticalBar {
@@ -36,6 +64,9 @@ $year-width: 5rem;
     max-width: $dot-size;
     position: relative;
     margin-left: $gutter-width;
+    @media only screen and (max-width: $break-point) {
+      display: none;
+    }
   }
 
   .verticalBar.first {
@@ -58,6 +89,9 @@ $year-width: 5rem;
 
   .jobTexts {
     margin-left: $gutter-width;
+    @media only screen and (max-width: $break-point) {
+      margin-left: 0;
+    }
     margin-top: -$main-line-height / 2;
     position: relative;
     top: $logo-size / 2;
@@ -72,13 +106,9 @@ $year-width: 5rem;
     max-width: $year-width;
   }
 
-  .jobTitleAndWorkplace {
-
-  }
-
   .details {
     margin-left: $year-width;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: $break-point) {
       margin-left: 0;
     }
     margin-bottom: 1 * $main-line-height;
@@ -90,9 +120,5 @@ $year-width: 5rem;
   .projectsHeader {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-  }
-
-  .projects {
-
   }
 }

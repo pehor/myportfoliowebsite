@@ -24,7 +24,7 @@ export default [
       'Integrating third-party APIs to acquire new supply for the business.',
       'Improving the React-based storefront with new features, using AB testing and user journey tracking.',
       'Improving customer self-serve rates and experience by redesigning the transactional email contents and migrating to a scalable and trackable delivery system (Amazon SES).',
-      'Taking the initiative to improve our knowledge sharing efforts by hosting workshops, internal conference talks, setting up internal learning sites and looking into improvements to our knowledge base. Championing the remote working culture. Mentoring new starters.'
+      'Driving knowledge sharing by hosting workshops, internal conference talks, setting up internal learning sites and looking into improvements to our knowledge base. Championing the remote working culture. Mentoring new starters.'
     ]
   },
   {

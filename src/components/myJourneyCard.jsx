@@ -4,6 +4,12 @@ import styles from './myJourneyCard.module.scss'
 import { cx } from '../lib/cssTools'
 
 export default function MyJourneyCard (props) {
+  const [showProjects, setShowProjects] = React.useState(false)
+
+  const toggleHiddenProjects = () => {
+    setShowProjects(!showProjects)
+  }
+
   return (
     <>
       <CardContainer className={ styles.myJourneyCard } preHeaderContent={ 'MY JOURNEY' }>
@@ -40,12 +46,16 @@ export default function MyJourneyCard (props) {
                       </div>
                       { job.projects && (
                         <div>
-                          <div className={ styles.projectsHeader }>PROJECTS</div>
-                          { job.projects.map((project, index) => {
-                            return (
-                              <div key={ index }>&mdash; { project }</div>
-                            )
-                          })}
+                          <input type="submit" value={ `Projects${showProjects ? '' : ' \u003E\u003E'}`} onClick={ toggleHiddenProjects } className={ styles.projectsHeader }/>
+                          { showProjects &&
+                            <div>
+                              {job.projects.map((project, index) => {
+                                return (
+                                  <div key={index}>&mdash; {project}</div>
+                                )
+                              })}
+                            </div>
+                          }
                         </div>
                       )}
                     </div>

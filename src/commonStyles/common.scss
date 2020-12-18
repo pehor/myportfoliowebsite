@@ -1,6 +1,11 @@
 @import './tools';
 @import './variables';
 
+body {
+  // preserves the newlines (and other whitespace) in loaded text
+  white-space: pre-wrap;
+}
+
 .containerCentered {
   @include centered($max-body-width);
 }

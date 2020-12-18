@@ -45,5 +45,12 @@ export default [
     members: [
       'DevOps', 'Agile (Scrum, Kanban)', 'Knowledge management'
     ]
+  },
+  {
+    title: 'Other',
+    value: 0.3,
+    members: [
+      'Ruby on Rails', 'C++', 'Android'
+    ]
   }
 ]

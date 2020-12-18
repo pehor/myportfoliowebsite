@@ -16,11 +16,6 @@ h1 {
   font-size: $large-font-size;
 }
 
-p {
-  // preserves the newlines (and other whitespace) in loaded text
-  white-space: pre-wrap;
-}
-
 button {
   padding: 0;
 }

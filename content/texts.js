@@ -1,7 +1,7 @@
 export default {
   summary: [
-    'Developing software since 2009, on various platforms.',
-    'Building scalable web applications in the cloud.',
+    'Developing software on various platforms since 2008.',
+    'Currently focusing on building scalable web applications in the cloud.',
     'Solving problems - regardless of field, language or technology.'
   ],
   topSkills: {

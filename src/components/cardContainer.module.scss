@@ -25,7 +25,10 @@
   top: 100%;
   color: $inverted-text-color;
   width: 100%;
-  margin-left: -20px;
+  margin-left: -40px;
+  @media only screen and (max-width: 600px) {
+    margin-left: -20px;
+  }
 
   a {
     color: $inverted-text-color;

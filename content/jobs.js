@@ -2,7 +2,7 @@ export default [
   {
     title: 'Senior Backend Engineer',
     company: 'Ometria',
-    description: 'Building scalable cloud-based microservices to support the multi-channel marketing platform.',
+    description: 'Building scalable cloud-based microservices to support the multi-channel marketing platform',
     dates: 'July 2020 - present',
     year: '2020',
     logo: '/ometria-logo.png',

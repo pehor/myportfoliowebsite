@@ -25,8 +25,8 @@ export default function SkillsCard (props) {
         <div className={ styles.skillsHeader }>
           <div className={ styles.titlePlaceHolder }></div>
           <div className={ styles.levelDescriptions }>
-            <div className={ cx(styles.start, commonStyles.left) }>Beginner</div>
-            <div className={ cx(styles.end, commonStyles.right) }>Expert</div>
+            <div className={ cx(styles.start, commonStyles.left) }>BEGINNER</div>
+            <div className={ cx(styles.end, commonStyles.right) }>EXPERT</div>
           </div>
         </div>
         { props.skills.map((skill, index) => {
@@ -35,7 +35,7 @@ export default function SkillsCard (props) {
               <div className={ styles.skillTitle }>{ skill.title }</div>
               <SkillBar className={ styles.skillBar } fullness={ skill.value }/>
               { skill.members && (
-                <div className={ styles.skillMembers }>{ skill.members.join(', ')}</div>
+                <div className={ styles.skillMembers }>&mdash; { skill.members.join(', ')}</div>
               )}
             </div>
           )

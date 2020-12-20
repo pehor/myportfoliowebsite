@@ -4,17 +4,20 @@ import styles from './myJourneyCard.module.scss'
 import { cx } from '../lib/cssTools'
 
 export default function MyJourneyCard (props) {
-  const [showProjects, setShowProjects] = React.useState(false)
+  const jobs = props.jobs || []
+  const defaultShowProjectsState = new Array(jobs.length).fill(false)
 
-  const toggleHiddenProjects = () => {
-    setShowProjects(!showProjects)
+  const [showProjects, setShowProjects] = React.useState(defaultShowProjectsState)
+
+  const toggleHiddenProjects = (index) => {
+    setShowProjects(showProjects.map((state, i) => i === index ? !state : state))
   }
 
   return (
     <>
       <CardContainer className={ styles.myJourneyCard } preHeaderContent={ 'MY JOURNEY' }>
         <div>
-          { props.jobs.map((job, index) => {
+          { jobs.map((job, index) => {
             return (
               <div key={ index }>
                 <div className={ styles.verticalCentered }>
@@ -46,12 +49,13 @@ export default function MyJourneyCard (props) {
                       </div>
                       { job.projects && (
                         <div>
-                          <input type="submit" value={ `Projects${showProjects ? '' : ' \u003E\u003E'}`} onClick={ toggleHiddenProjects } className={ styles.projectsHeader }/>
-                          { showProjects &&
+                          <input type="submit" value={ `Projects${showProjects[index] ? '' : ' \u003E\u003E'}`}
+                            onClick={ () => { toggleHiddenProjects(index) } } className={ styles.projectsHeader }/>
+                          { showProjects[index] &&
                             <div>
                               {job.projects.map((project, index) => {
                                 return (
-                                  <div key={index}>&mdash; {project}</div>
+                                  <div key={ index }>&mdash; { project }</div>
                                 )
                               })}
                             </div>

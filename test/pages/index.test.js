@@ -12,7 +12,7 @@ describe('index', () => {
   })
 
   test('renders some text', () => {
-    expect(res.getByText(/Peter Horvath/i)).toBeInTheDocument()
+    expect(res.getAllByText(/Peter Horvath/i).length > 0)
   })
 
   test('renders all sections', () => {

@@ -68,10 +68,6 @@ npm run test
 npm run coverage
 ```
 
-# Web crawlers
-
-A robots.txt file is included to disallow all indexing. Change this according to your needs.
-
 # License
 
 This repository licensed under MIT license.

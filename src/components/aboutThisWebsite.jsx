@@ -6,7 +6,7 @@ export default function AboutThisWebsiteCard () {
     <>
       <CardContainer preHeaderContent={'ABOUT THIS WEBSITE'}>
         <p>
-          This website was built with two purposes in mind: to serve as a personal website and as a developer's
+          This website was built with two purposes in mind: to serve as a personal website and as a developer&apos;s
           portfolio item.
         </p>
         <p>

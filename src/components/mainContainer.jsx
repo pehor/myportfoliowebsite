@@ -9,19 +9,17 @@ export default function MainContainer (props) {
   return (
     <>
       <Head>
-        <title>Peter Horvath</title>
+        <title>Peter Horvath&apos;s page</title>
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"></link>
       </Head>
-      <div className="page">
+      <div>
         <div className={ styles.pageHeader }>
         </div>
         <div className={ styles.container }>
           <div className={ commonStyles.containerCentered }>
             { children }
           </div>
-        </div>
-        <div className={ styles.pageFooter }>
         </div>
       </div>
     </>

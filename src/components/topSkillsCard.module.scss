@@ -1,3 +1,5 @@
+@import '../commonStyles/variables';
+
 .topSkillsCard {
   background-image: url('/coffee-small.jpg');
   background-position: center;
@@ -23,7 +25,7 @@
   font-size: 0.6rem;
 
   text-align: center;
-  @media all and (max-width: 600px) {
+  @media all and (max-width: $main-break-point) {
     text-align: left;
   }
 

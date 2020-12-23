@@ -55,7 +55,7 @@ export default function MyJourneyCard (props) {
                             <div>
                               {job.projects.map((project, index) => {
                                 return (
-                                  <div key={ index }>&mdash; { project }</div>
+                                  <div className={ styles.project } key={ index }>&mdash; { project }</div>
                                 )
                               })}
                             </div>

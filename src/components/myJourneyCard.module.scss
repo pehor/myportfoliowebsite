@@ -1,9 +1,10 @@
 @import "../commonStyles/variables.scss";
 
-$logo-size: 70px;
-$dot-size: 20px;
+$logo-size: $main-line-height * 2.5;
+$mobile-logo-size: $main-line-height * 3;
+$dot-size: 0.8rem;
 $gutter-width: 20px;
-$year-width: 5rem;
+$year-width: 3rem;
 $break-point: 760px;
 
 .myJourneyCard {
@@ -13,21 +14,27 @@ $break-point: 760px;
 
   .logo {
     display: flex;
-    min-width: $logo-size;
-    max-width: $logo-size;
-    height: $logo-size;
     overflow: hidden;
     border-radius: 50%;
     background: white;
+
+    min-width: $logo-size;
+    max-width: $logo-size;
+    height: $logo-size;
+    @media only screen and (max-width: $main-break-point) {
+      min-width: $mobile-logo-size;
+      max-width: $mobile-logo-size;
+      height: $mobile-logo-size;
+    }
+
+    @media only screen and (max-width: $break-point) {
+      margin-right: 20px;
+    }
 
     img {
       margin: auto auto;
       width: 100%;
       height: auto;
-    }
-
-    @media only screen and (max-width: $break-point) {
-      margin-right: 20px;
     }
   }
 
@@ -44,6 +51,7 @@ $break-point: 760px;
       display: flex;
     }
   }
+
   .onlyLargeScreenBlock {
     display: block;
     @media only screen and (max-width: $break-point) {
@@ -101,6 +109,7 @@ $break-point: 760px;
   .yearAndJob {
     display: flex;
   }
+
   .year {
     min-width: $year-width;
     max-width: $year-width;
@@ -117,8 +126,13 @@ $break-point: 760px;
   .description {
     margin-top: 1rem;
   }
+
   .projectsHeader {
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project {
     margin-bottom: 0.5rem;
   }
 }

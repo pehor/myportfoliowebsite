@@ -2,16 +2,20 @@
 @import '../commonStyles/commonResets';
 @import '../commonStyles/variables';
 
-body {
+html {
   color: $main-text-color;
   background: $background-color;
   font-family: $main-font;
   font-weight: 300;
   font-size: 16px * 1.4;
+  @media only screen and (max-width: $main-break-point) {
+    font-size: 16px * 1.1;
+  }
 }
 
 h1 {
   font-size: $large-font-size;
+  line-height: $large-line-height;
 }
 
 a {
@@ -20,7 +24,7 @@ a {
 }
 
 .pageHeader {
-  height: 20px
+  height: 20px;
 }
 
 .container {

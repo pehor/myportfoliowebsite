@@ -1,49 +1,86 @@
 @import '../commonStyles/variables';
 
-$leftColWidth: 14rem;
-$rightColWidth: calc(100% - 14rem);
+$leftColWidth: 10rem;
+$rightColWidth: calc(100% - 10rem);
 
 .skillsCard {
   .skillsHeader {
-    font-size: 1rem;
+    font-size: 0.6rem;
 
     .titlePlaceHolder {
-      display: inline-block;
       width: $leftColWidth;
-    }
-    .levelDescriptions {
+
       display: inline-block;
+      @media all and (max-width: $main-break-point) {
+        display: none;
+      }
+    }
+
+    .levelDescriptions {
       width: $rightColWidth;
+
+      display: inline-block;
 
       .start, .end {
         display: inline-block;
       }
+      @media all and (max-width: $main-break-point) {
+        width: 100%;
+      }
     }
   }
+
   .skill {
     margin-bottom: 0.5rem;
+    @media all and (max-width: $main-break-point) {
+      margin-bottom: 1rem;
+    }
   }
+
   .skillTitle {
     display: inline-block;
     width: $leftColWidth;
+    @media all and (max-width: $main-break-point) {
+      display: block;
+      width: auto;
+    }
   }
+
   .skillBar {
     display: inline-block;
     width: $rightColWidth;
 
+    @media all and (max-width: $main-break-point) {
+      display: block;
+      width: auto;
+    }
+
     .skillBarLeft {
       background: $diagram-color-callout;
     }
+
     .skillBarRight {
       background: $diagram-color-light;
     }
+
     .skillBarLeft, .skillBarRight {
       display: inline-block;
-      height: 0.5rem;
+      height: 8px;
     }
   }
   .skillMembers {
-    margin-left: 3rem;
     margin-top: 0.5rem;
+
+    margin-left: 1.5rem;
+    @media all and (max-width: $main-break-point) {
+      margin-left: 1rem;
+    }
+
+    &:before {
+      content: '\2014 ';
+      @media all and (max-width: $main-break-point) {
+        content: '';
+      }
+    }
   }
 }

@@ -10,7 +10,7 @@ export default function WelcomeCard () {
       <CardContainer className={ styles.welcomeCard } preHeaderContent={'WELCOME'}>
         <div className={ styles.wrapper }>
           <div className={ cx(styles.texts) }>
-            <br/>
+            <div className={ styles.spacer }></div>
             <h1>PETER HORVATH</h1>
             <h1>SOFTWARE ENGINEER</h1>
             <SocialLinks className={ styles.socialLinks }/>

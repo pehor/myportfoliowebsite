@@ -21,6 +21,13 @@
     @media all and (max-width: $main-break-point) {
       text-align: center;
     }
+
+    .spacer {
+      height: $main-line-height;
+      @media all and (max-width: $main-break-point) {
+        display: none
+      }
+    }
   }
 
   .socialLinks {

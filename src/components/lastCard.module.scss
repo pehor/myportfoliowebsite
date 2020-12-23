@@ -1,0 +1,13 @@
+@import '../commonStyles/variables';
+
+.lastCard {
+  @media only screen and (max-width: $main-break-point) {
+    flex-flow: column;
+    align-items: center;
+  }
+  .backToTop {
+    @media only screen and (max-width: $main-break-point) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

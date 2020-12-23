@@ -7,10 +7,15 @@ body {
   background: $background-color;
   font-family: $main-font;
   font-weight: 300;
+  font-size: 16px * 1.4;
+}
+
+h1 {
+  font-size: $large-font-size;
 }
 
 a {
-  font-size: $main-font-size;
+  color: $main-text-color;
   text-decoration: underline;
 }
 
@@ -20,6 +25,13 @@ a {
 
 .container {
   min-height: 700px;
-  font-size: $main-font-size;
   line-height: $main-line-height;
+}
+
+input[type="submit"] {
+  color: $main-text-color;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  font-weight: 300;
+  text-decoration: underline;
 }

@@ -40,7 +40,7 @@
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-standard": "4.0.1",
     "aws-sdk": "2.646.0",
-    "s3-redeploy": "1.1.1",
+    "s3-redeploy": "pehor/s3-redeploy-noacl#master",
     "serve": "11.3.2",
     "@testing-library/jest-dom": "5.1.0",
     "@testing-library/react": "9.4.0",

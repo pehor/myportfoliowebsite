@@ -6,7 +6,7 @@
     "dev": "next",
     "dev:debug": "NODE_OPTIONS='--inspect' next",
     "build:only": "next build",
-    "build": "npm run lint && npm run build:only && rm -rf ./out && npm run export",
+    "build": "npm run lint && rm -rf ./.next && npm run build:only && rm -rf ./out && npm run export",
     "start": "next start",
     "export": "next export",
     "lint": "eslint './**/*.{js,jsx}' && echo 'all ok!'",

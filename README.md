@@ -5,6 +5,8 @@ demonstrate website building capabilities. (I.e. I wanted to avoid using WordPre
 The site is built with React.js, and is statically rendered by Next.js. Styling is done with CSS modules using
 SCSS and designed in a basic responsive way. The results are served from S3 through CloudFront.
 
+Added security settings to Cloudfront based on a report from here: https://securityheaders.com
+
 # Scripts
 
 You need to run `npm install` before running any of the scripts below.

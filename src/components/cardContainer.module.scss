@@ -12,6 +12,7 @@
     padding: 20px 20px;
   }
   position: relative;
+  user-select: none;
 }
 
 .preHeaderStyles {
@@ -19,6 +20,7 @@
   top: -$main-line-height;
   color: $inverted-text-color;
   left: 20px;
+  margin-top: -5px;
 }
 
 .postHeaderStyles {

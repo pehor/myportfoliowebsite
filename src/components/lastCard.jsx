@@ -17,7 +17,7 @@ export default function LastCard () {
           <div className={ cx(commonStyles.column, styles.backToTop) }>
             <Link href={ '/' }><a>BACK TO TOP</a></Link>
           </div>
-          <div className={ cx(commonStyles.column, commonStyles.columnRight) }>&copy; Peter Horvath 2020</div>
+          <div className={ cx(commonStyles.column, commonStyles.columnRight) }>&copy; Peter Horvath 2022</div>
         </div>
       </CardContainer>
     </>

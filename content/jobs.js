@@ -7,9 +7,9 @@ export default [
     year: '2020',
     logo: '/ometria-logo.png',
     projects: [
-      'Integration of mobile push notifications to the marketing automation system and ensuring that the externally built SDK was aligned to our needs. (Python, PostgreSQL)',
-      'Improved the scalability of the marketing automation system, which allowed Ometria to offer a feature in the peak period for key customers.',
-      'Coordinating the scaling up to ensure the system performed well in the peak period (Black Friday).'
+      'During a push to ensure the scalability of our platform, did planning and execution of the replacement of some of our key infrastructure - supported the migration to Redshift and Confluent Kafka.',
+      'Integration of mobile push notifications to the marketing automation system. Coordinating with an external team, ensuring that the mobile SDK they developed aligned to our needs. (Python, PostgreSQL, Kafka)',
+      'Ensuring the success of Black Friday for our clients by coordinating the scaling up of our marketing platform to ensure the system performed well in the peak period. Have also optimized some of the OLAP queries that served one of the main usecases (price drop - triggered email campaigns)'
     ]
   },
   {

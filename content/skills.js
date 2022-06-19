@@ -1,18 +1,10 @@
 export default [
   {
-    title: 'JavaScript',
+    title: 'Python',
     value: 0.9,
     members: [
-      'Node.js', 'React', 'HTML', 'CSS (LESS/SASS)', 'Responsive design'
+      'Flask', 'SQLAlchemy', 'asyncio'
     ]
-  },
-  {
-    title: 'Python',
-    value: 0.7
-  },
-  {
-    title: 'Go',
-    value: 0.2
   },
   {
     title: 'Microservices',
@@ -20,23 +12,9 @@ export default [
   },
   {
     title: 'Databases',
-    value: 0.6,
+    value: 0.8,
     members: [
-      'PostgreSQL', 'MySQL', 'DynamoDB', 'Redis', 'Redshift'
-    ]
-  },
-  {
-    title: 'Cloud infrastructure',
-    value: 0.7,
-    members: [
-      'AWS (EC2, S3, Lambda)', 'Pubsub (GCP)', 'Kubernetes', 'Docker'
-    ]
-  },
-  {
-    title: 'CI/CD',
-    value: 0.7,
-    members: [
-      'Git', 'GitHub', 'Automated testing'
+      'PostgreSQL', 'Redshift', 'DynamoDB', 'Redis', 'OLTP and OLAP queries and optimization'
     ]
   },
   {
@@ -47,10 +25,31 @@ export default [
     ]
   },
   {
+    title: 'Cloud infrastructure',
+    value: 0.7,
+    members: [
+      'AWS', 'Kafka', 'Pubsub (GCP)', 'Kubernetes'
+    ]
+  },
+  {
+    title: 'CI/CD',
+    value: 0.7,
+    members: [
+      'Git', 'GitHub', 'Automated testing', 'Docker'
+    ]
+  },
+  {
+    title: 'JavaScript',
+    value: 0.7,
+    members: [
+      'Node.js', 'React', 'HTML', 'CSS (LESS/SASS)', 'Responsive design'
+    ]
+  },
+  {
     title: 'Other',
     value: 0.3,
     members: [
-      'Ruby on Rails', 'C++', 'Android'
+      'Android', 'Go'
     ]
   }
 ]
